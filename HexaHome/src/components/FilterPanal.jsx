@@ -36,12 +36,12 @@ const FilterPanel = ({ filters, onFilterChange }) => {
     };
 
     const handleBudgetChange = (e) => {
-        const newBudget = [0, e.target.value];
+        const newBudget = [0, parseInt(e.target.value)];
         onFilterChange({ ...filters, budgetRange: newBudget });
     };
 
     const handleAreaChange = (e) => {
-        const newArea = [0, e.target.value];
+        const newArea = [0,parseInt(e.target.value)];
         onFilterChange({ ...filters, areaRange: newArea });
     };
 
@@ -82,7 +82,7 @@ const FilterPanel = ({ filters, onFilterChange }) => {
                 ))}
             </div>
             <div>
-                <label>Budget Range</label>
+                <label>Budget Range(In Lakh): {filters.budgetRange[1]}</label>
                 <input
                     type="range"
                     min="0"
@@ -92,7 +92,7 @@ const FilterPanel = ({ filters, onFilterChange }) => {
                 />
             </div>
             <div>
-                <label>Plot Area</label>
+                <label>Plot Area(Sqft): {filters.areaRange[1]}</label>
                 <input
                     type="range"
                     min="0"

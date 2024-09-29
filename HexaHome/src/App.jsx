@@ -8,10 +8,10 @@ function App() {
   const [filters, setFilters] = useState({
     search: '',
     propertyType: ["Apartment", "Individual Floor", "Independent House", "Independent Villa", "1Rk/Studio House", "Plot/Land"],
-    budgetRange: [0, 1000],
-    areaRange: [0, 10000], // Changed to areaRange for consistency
-    postedBy: ["owner", "dealer", "builder"], // Changed 'Builder' to 'builder' for consistency
-    propertyFacing: ["north", "south", "east", "west", "northEast", "northWest", "southEast", "southWest"], // Changed to lowercase for consistency
+    budgetRange: [0, 10000],
+    areaRange: [0, 10000],
+    postedBy: ["owner", "dealer", "builder"], 
+    propertyFacing: ["north", "south", "east", "west", "northEast", "northWest", "southEast", "southWest"], 
   });
 
   const handleFilterChange = (newFilters) => {
