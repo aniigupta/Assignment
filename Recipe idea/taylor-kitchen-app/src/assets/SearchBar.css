@@ -1,0 +1,52 @@
+/* MealDetailsPage.css */
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #3498db;
+  }
+  
+  .search-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .search-input {
+      max-width: 280px;
+    }
+  
+    .search-button {
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+  

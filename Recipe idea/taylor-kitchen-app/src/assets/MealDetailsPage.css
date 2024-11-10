@@ -1,0 +1,63 @@
+.meal-details-page {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.meal-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.meal-image {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.meal-title {
+  font-size: 2rem;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.ingredients-title,
+.instructions-title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.ingredients-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.ingredient-item {
+  font-size: 1rem;
+  color: #555;
+}
+
+.instructions-text {
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .meal-image {
+    width: 80%;
+  }
+
+  .meal-title {
+    font-size: 1.5rem;
+  }
+
+  .ingredients-title,
+  .instructions-title {
+    font-size: 1.25rem;
+  }
+}
