@@ -25,7 +25,7 @@ const MealResultsPage = ({ ingredient }) => {
         {meals && meals.length > 0 ? (
           meals.map((meal) => <MealCard key={meal.idMeal} meal={meal} />)
         ) : (
-          <p>No meals found</p>
+          <p>No meals found.        Try something else!</p>
         )}
       </div>
     </div>

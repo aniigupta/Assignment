@@ -1,6 +1,10 @@
 .meal-results-page {
   padding: 20px;
-  background: #f9f9f9;
+  background: #242424;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .meal-results {
@@ -8,42 +12,63 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .meal-card {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.meal-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
 }
 
 .meal-card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px; 
   height: auto;
 }
 
 .meal-card h3 {
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 15px;
+  font-size: 20px; 
   color: #333;
+  font-weight: 600; 
 }
 
-.meal-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.meal-card p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
   .meal-results {
-      gap: 15px;
+    gap: 15px;
+    padding: 10px;
   }
 
   .meal-card {
-      width: 100%;
-      max-width: 220px;
+    width: 100%;
+    max-width: 220px;
+    padding: 15px;
+  }
+
+  .meal-card h3 {
+    font-size: 18px;
+  }
+
+  .meal-card p {
+    font-size: 13px;
   }
 }
